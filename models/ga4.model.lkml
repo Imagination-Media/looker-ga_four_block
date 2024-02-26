@@ -1,4 +1,5 @@
-connection: "@{GA4_CONNECTION}"
+#connection: "@{GA4_CONNECTION}"
+connection: "madegoods_bigquery"
 
 include: "/dashboards/*.dashboard"
 include: "/explores/*.explore.lkml"

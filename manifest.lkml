@@ -6,12 +6,15 @@ project_name: "ga_four"
 
 ## Connection Constants:
 constant: GA4_CONNECTION {
-  value: "agregori-connection"
+  value: "madegoods_bigquery"
   export: override_required
 }
 
+
+
 constant: GA4_SCHEMA {
-  value: "ga4_export"
+#  value: "ga4_export"
+  value:"analytics_321508676"
   export: override_optional
 }
 
