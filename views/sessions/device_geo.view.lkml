@@ -1,7 +1,8 @@
 include: "/views/sessions/session_list_with_event_history.view.lkml"
 view: device_geo{
   derived_table:{
-    sql_trigger_value:${session_list_with_event_history.SQL_TABLE_NAME};;
+  #  sql_trigger_value:${session_list_with_event_history.SQL_TABLE_NAME};;
+    datagroup_trigger: ga4_session_list_with_event_history
     sql:select sl.sl_key
       ,  sl.device.category device__category
       ,  sl.device.mobile_brand_name device__mobile_brand_name

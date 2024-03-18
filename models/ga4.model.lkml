@@ -5,7 +5,10 @@ include: "/dashboards/*.dashboard"
 include: "/explores/*.explore.lkml"
 include: "/views/**/*.view.lkml"
 
+
 label: "Google Analytics 4"
+
+
 
 
 datagroup: ga4_main_datagroup {
@@ -20,6 +23,11 @@ datagroup: ga4_default_datagroup {
 
 datagroup: ga4_attribution_channel {
   sql_trigger: SELECT 1 ;;
+}
+
+datagroup: ga4_session_list_with_event_history {
+  sql_trigger: SELECT last_modified_time FROM `looker_scratch.__TABLES__`
+    where table_id='LR_HGKQO1708997601724_session_list_with_event_history' ;;
 }
 
 persist_with: ga4_main_datagroup
