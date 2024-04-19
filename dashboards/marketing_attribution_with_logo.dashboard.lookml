@@ -1,5 +1,5 @@
 - dashboard: marketing_attribution_with_logo
-  title: Marketing Attribution
+  title: Marketing Attribution (original with logo)
   layout: newspaper
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
