@@ -112,4 +112,13 @@ explore: sessions {
     view_label: "Acquisition"
   }
 
+
+}
+
+explore: device_geo {
+
+}
+#added below for marketing_attributions dashboard
+explore: attribution {
+  hidden: yes
 }
