@@ -9,3 +9,5 @@ Plan is to circle back and delete the unused content, but in case don't get that
 in the imported_projects directory or the root folder.
 
 See change history in github  Imagination-Media/looker-ga_four_block_from_fork
+
+11_16_24  Deleted the marketplace components (marketplace_lock, market_place.json, and no longer used refinements files) via github and imported to new branch, corrected some warning messages and pushed to master

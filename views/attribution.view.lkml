@@ -63,7 +63,6 @@ view: attribution {
           geo.region,
           geo.city
         FROM
-        --  `@{SCHEMA_NAME}.@{GA4_TABLE_NAME}` -- modify to your project
           `@{GA4_SCHEMA}.@{GA4_TABLE_VARIABLE}` -- modified
          ),
         id_stitching AS (
@@ -155,7 +154,6 @@ view: attribution {
             WHERE
               KEY = 'ga_session_id')) AS events
         FROM
-         -- `@{SCHEMA_NAME}.@{GA4_TABLE_NAME}` s -- modify to your project
           `@{GA4_SCHEMA}.@{GA4_TABLE_VARIABLE}` s --modified for IM Media
         WHERE
           event_name = 'session_start' ),
