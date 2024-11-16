@@ -1,6 +1,3 @@
-marketplace: {
-  listing: "ga4"
-}
 project_name: "ga_four"
 
 
